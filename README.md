@@ -45,7 +45,7 @@ Not included:
 
 Roadmap:
 
-* [] behaviour_SUITE_data
+* [X] behaviour_SUITE_data
 * [] callgraph_SUITE_data
 * [] cplt_SUITE_data
 * [] default_ignore_overlapping_contract_SUITE_data
