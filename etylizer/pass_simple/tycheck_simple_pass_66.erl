@@ -12,3 +12,5 @@ fun_local_02_plus() ->
         end
         end,
     F(3).
+-spec my_plus({integer(), integer()}) -> integer(); ({float(), integer()}) -> float(); ({integer(), float()}) -> float(); ({float(), float()}) -> float().
+my_plus({A, B}) -> A + B.
