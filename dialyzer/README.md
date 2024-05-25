@@ -5,6 +5,9 @@ The test suite represents the ground truth for Dialyzer version v5.1.3.
 Problem: What defaults to use?
 We use default settings shipped with OTP 26.
 
+Problem: Include tests that are executed with different defaults?
+Yes, to compare against other tools.
+
 If there are multiple test cases in one module, we split that file in multiple files.
 
 Categories:

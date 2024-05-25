@@ -3,6 +3,7 @@ Test suites from the following tools:
 * `otp/dialyzer`
 * `Gradualizer`
 * `etylizer`
+* `eqwalizer`
 
 Notes:
 
