@@ -13,6 +13,7 @@ Not included:
 * third_party
 * list.erl: import maybe tests
 * maybe.erl: custom type
+* %eqwalizer: fixme annotations
 
 Todo maybe:
 * split up list.erl?
