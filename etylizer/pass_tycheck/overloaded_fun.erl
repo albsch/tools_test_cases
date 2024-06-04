@@ -24,7 +24,9 @@ bar(X) -> foo(X).
 -spec egg_infer() -> 1|2.
 egg_infer() -> foo(2).
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(2, foo(1)),
     ?assertEqual(1, foo(2)),
-    ?assertEqual(4, foo(3)).
+    ?assertEqual(4, foo(3)),
+    ok.

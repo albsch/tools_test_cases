@@ -23,12 +23,14 @@ even(X) -> X.
               (list(T)) -> list(T | boolean()).
 map_even(L) -> my_map_infer(fun even/1, L).
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(true, even(6)),
     ?assertEqual(false, even(7)),
     ?assertEqual([2,3,4], my_map_infer(fun (X) -> X + 1 end, [1,2,3])),
     ?assertEqual([some_atom], map_even([some_atom])),
     ?assertEqual([false, true, false], map_even([1,2,3])),
-    ?assertEqual([false, some_atom, true], map_even([1, some_atom, 2])).
+    ?assertEqual([false, some_atom, true], map_even([1, some_atom, 2])),
+    ok.
 
 

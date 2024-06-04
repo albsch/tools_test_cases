@@ -12,6 +12,8 @@ bar(X) ->
         _ -> foo(X) % gradualizer fails here
     end.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(1, bar(true)),
-    ?assertEqual(6, bar(5)).
+    ?assertEqual(6, bar(5)),
+    ok.

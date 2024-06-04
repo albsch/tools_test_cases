@@ -18,7 +18,9 @@ foo(X) ->
         _ -> X + 1
     end.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(2, foo(1)),
     ?assertEqual(1, foo(2)),
-    ?assertEqual(4, foo(3)).
+    ?assertEqual(4, foo(3)),
+    ok.

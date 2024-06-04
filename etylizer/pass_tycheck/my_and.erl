@@ -15,8 +15,10 @@ my_and_infer(_, X) -> X.
 my_and2_infer(true, true) -> true;
 my_and2_infer(_, _) -> false.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(1, my_and_infer(true, 1)),
     ?assertEqual("foo", my_and_infer(true, "foo")),
     ?assertEqual(false, my_and_infer(false, some_atom)),
-    ?assertEqual(false, my_and_infer("bar", false)).
+    ?assertEqual(false, my_and_infer("bar", false)),
+    ok.

@@ -17,10 +17,12 @@ foo2_infer(X) -> string:length(X).
 foo(X) when is_integer(X) -> X + 1;
 foo(X) -> X ++ "_abc".
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(2, foo_infer(1)),
     ?assertEqual("foo_abc", foo_infer("foo")),
     ?assertEqual(2, foo(1)),
     ?assertEqual("foo_abc", foo("foo")),
     ?assertEqual("foo", foo2_infer(1)),
-    ?assertEqual(3, foo2_infer("foo")).
+    ?assertEqual(3, foo2_infer("foo")),
+    ok.

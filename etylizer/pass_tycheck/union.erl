@@ -18,7 +18,9 @@ handle_response_infer(R) ->
         {false, _} -> -1
     end.
 
+-spec my_test() -> ok.
 my_test() ->
-    ?assertEqual(42, handle_response_infer({true, 42})).
+    ?assertEqual(42, handle_response_infer({true, 42})),
     %?assertEqual(42, handle_response_infer({false, "foo"})).
+    ok.
 

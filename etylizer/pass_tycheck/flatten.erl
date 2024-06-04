@@ -22,6 +22,8 @@ flatten_erl([]) -> [];
 flatten_erl([H | T]) -> flatten(H) ++ flatten(T);
 flatten_erl(X) -> [X].
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual([1,2,3,4,5], flatten([1, [2,3,[4, [5]]]])),
-    ?assertEqual([1,2,3,4,5], flatten_erl([1, [2,3,[4, [5]]]])).
+    ?assertEqual([1,2,3,4,5], flatten_erl([1, [2,3,[4, [5]]]])),
+    ok.

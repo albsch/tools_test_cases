@@ -9,5 +9,7 @@ bar(X) ->
        true -> X
     end.
 
+-spec my_test() -> ok.
 my_test() ->
-    ?assertEqual(0, bar(-1)).
+    ?assertEqual(0, bar(-1)),
+    ok.

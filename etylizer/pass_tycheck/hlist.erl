@@ -30,7 +30,9 @@ bar(L) ->
         [X, _ | Y] -> [X | Y]
     end.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(3, foo([1, "foo", 2])),
     ?assertEqual([1,2,3,4], bar([1, "foo", 2, 3, 4])),
-    ?assertEqual([1], bar([1, "foo"])).
+    ?assertEqual([1], bar([1, "foo"])),
+    ok.

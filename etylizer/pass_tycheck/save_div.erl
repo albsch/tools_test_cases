@@ -12,6 +12,8 @@ save_div(X, Y) ->
         _ -> {ok, X div Y}
     end.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual({ok, 2}, save_div(4,2)),
-    ?assertEqual(none, save_div(4,0)).
+    ?assertEqual(none, save_div(4,0)),
+    ok.

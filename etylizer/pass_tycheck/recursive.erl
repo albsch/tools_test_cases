@@ -15,5 +15,7 @@ bar(N, X) -> [X | foo(N - 1, X)].
 spam() ->
     bar(4, "string") ++ bar(2, 42).
 
+-spec my_test() -> ok.
 my_test() ->
-    ?assertEqual(["string", "string", "string", "string", 42, 42], spam()).
+    ?assertEqual(["string", "string", "string", "string", 42, 42], spam()),
+    ok.

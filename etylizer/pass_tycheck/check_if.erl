@@ -19,8 +19,10 @@ foo(X) ->
         true -> 42
     end.
 
+-spec my_test() -> ok.
 my_test() ->
     ?assertEqual(2, foo(1)),
     ?assertEqual(-1, foo("foo")),
     ?assertEqual(5, foo("huray")),
-    ?assertEqual(42, foo("X")).
+    ?assertEqual(42, foo("X")),
+    ok.

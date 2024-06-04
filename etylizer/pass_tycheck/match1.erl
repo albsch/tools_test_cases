@@ -11,5 +11,7 @@ foo(X) ->
     [ _ | _ ] = X,
     length(X). % X has type list() here
 
+-spec my_test() -> ok.
 my_test() ->
-    ?assertEqual(2, foo([1,2])).
+    ?assertEqual(2, foo([1,2])),
+    ok.
